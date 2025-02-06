@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Scrollbar Thumb (Movable part) */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #FF9933, #FFD700, #8B0000);
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar Track (Background) */
+  ::-webkit-scrollbar-track {
+    background: #FFF5E1;
+    border-radius: 10px;
+  }
+  
+  /* Scrollbar on Hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #8B0000, #FFD700, #FF9933);
+  }
+  
