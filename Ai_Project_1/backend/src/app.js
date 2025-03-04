@@ -9,4 +9,6 @@ app.use(
 
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 
+app.use("/api/v1/project", require("./Router/Routes"));
+
 module.exports = app;
